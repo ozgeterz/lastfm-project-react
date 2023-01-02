@@ -139,5 +139,8 @@
             width: 90px;
             height: 90px;
             }
+            .artist-card-info{
+              display: none;
+              }
     }
     
