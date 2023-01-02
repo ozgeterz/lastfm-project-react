@@ -111,6 +111,7 @@
       .container{
         display: flex;
         flex-direction: column;
+        margin-top: 2%;
       }
       .artists-section{
         height: 30vh;
@@ -128,9 +129,7 @@
             font-size: 15px;
             padding: 5px;
           }
-          .container{
-            margin-top: 2%;
-          }
+        
           .column{
             width: auto;
             font-size: 14px;
