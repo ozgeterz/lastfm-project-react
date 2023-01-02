@@ -77,6 +77,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
     }
   .img{
     display: flex; 
@@ -104,23 +105,39 @@
   
     @media screen and (max-width: 1200px) {
       .artists-wrapper{
-      height: min(70vh, 50rem);
-          width: 80%!important;
-          height: 75%;
-          zoom: 0.8;
-      }
-    }
-    @media screen and (max-width: 1000px) {
+        height: 40vh;
+     
+        }
       .container{
         display: flex;
         flex-direction: column;
       }
       .artists-section{
-        width: 90%;
-        max-height: 90%;
+        height: 30vh;
         display: flex;
-        padding: 1rem;
         overflow:auto;
+        gap: 30px;
+        align-items: center;
         }
+        .img{
+  
+          width: 70px;
+          height: 70px; 
+          }
+          .artist-card-info{
+            font-size: 15px;
+            padding: 5px;
+          }
+          .column{
+            width: auto;
+            font-size: 14px;
+          }
+          .artist-stats{
+            display: none;
+          }
+          .artist-card-info-img{
+            width: 90px;
+            height: 90px;
+            }
     }
     

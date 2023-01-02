@@ -26,11 +26,13 @@ class Home extends Component {
     return (
       <div className="h-container">
         <div className="h-artists-wrapper">
-          <div className="h-artists-section">
+          <div className="h-artists-section"> 
+           <div className="h-artists">
             {tracks.map((track) => {
               const name = track.name;
               const link = "/artist/" + name;
               return (
+              
                 <Link to={link} className="h-artist">
                   <img
                     src={track.image[4]["#text"]}
@@ -46,9 +48,10 @@ class Home extends Component {
                     <h5>Playcount:{track.playcount}</h5>
                   </div>
                 </Link>
+       
               );
             })}
-          </div>
+          </div>         </div>
         </div>
       </div>
     );

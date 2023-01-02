@@ -15,15 +15,17 @@
 }
 .h-artists-section{
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 2rem ;
   overflow:auto;
   }
-  .h-artists-section :hover{
+  .h-artists :hover{
     transform: scale(1.02);
    
+  }
+  .h-artists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 .h-artist{
   display: flex;
@@ -61,26 +63,16 @@
   border-bottom: 2px solid black;
 }
 @media screen and (max-width: 1200px) {
-  .artists-wrapper{
-  height: min(70vh, 50rem);
-      width: 80%!important;
-      height: 75%;
-      zoom: 0.8;
+  .h-artists-wrapper{
+    height: 90vh;
+  
   }
-}
-@media screen and (max-width: 942px) {
-  .artists-wrapper{
-  height: min(70vh);
+      .h-img{
+        width: 70px;
+        height: 70px; 
+        }
+        .h-artist-stats{
+          display: none;
+        }
 
-      width: 80%!important;
-      height: 75%;
-      zoom: 0.5;
-  }
-  .artists-section{
-    width: 90%;
-    max-height: 90%;
-    display: flex;
-    padding: 1rem;
-    overflow:auto;
-    }
 }
