@@ -1,3 +1,8 @@
+.h-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
 .h-artists-wrapper{
   height: min(90vh);
   max-width: 90%;
@@ -6,6 +11,7 @@
   display: flex; 
   border-radius: 10px;
   box-shadow: 0 0  20px 3px rgb(0, 0, 0);
+  background-color: rgb(224, 232, 250);
 }
 .h-artists-section{
   width: 100%;
@@ -22,10 +28,10 @@
 .h-artist{
   display: flex;
   border-radius: 7px;
-  background: rgba(206, 174, 245, 1.0);
-  background: -webkit-linear-gradient(top left, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
-  background: -moz-linear-gradient(top left, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
-  background: linear-gradient(to bottom right, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
+  background: rgba(191, 203, 223, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
+  background: -moz-linear-gradient(top left, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
+  background: linear-gradient(to bottom right, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
   align-items: center;
   cursor: pointer!important;
   height: 150px;
@@ -38,6 +44,7 @@
   text-decoration:none ; 
   box-shadow: 0 0  10px 2px rgb(0, 0, 0);
 }
+
 .h-artist-stats{
   display: flex;
   flex-direction: column;
@@ -49,11 +56,6 @@
   cursor: pointer!important;
   width: 100px;
   height: 100px; 
-}
-.h-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
 }
 .h-artist-name{
   border-bottom: 2px solid black;

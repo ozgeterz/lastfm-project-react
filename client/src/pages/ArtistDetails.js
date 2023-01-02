@@ -48,14 +48,15 @@ class ArtistDetails extends Component {
         {artists.map((artist) => {
           return (
             <div className="artist-card-info">
-              <div className="artist-card-info-img">
-                <img src={artist.image[1]["#text"]} alt="Artist Page" />
-              </div>
+              <img
+                src={artist.image[1]["#text"]}
+                className="artist-card-info-img"
+                alt="Artist Page"
+              />
               <h2>{artist.artist.name}</h2>
             </div>
           );
         })}
-
         <div className="container">
           <div className="column">
             <div className="text">Top Albums</div>
@@ -71,20 +72,19 @@ class ArtistDetails extends Component {
                         href={album.url}
                         target={"_blank"}
                       >
-                        <div className="artist-card-left">
-                          <div className="img">
-                            <img
-                              src={album.image[1]["#text"]}
-                              alt="Artist Page"
-                            />
-                          </div>
+                        <div className="artist-info">
+                          <img
+                            className="img"
+                            src={album.image[1]["#text"]}
+                            alt="Artist Page"
+                          />
                           <div>
                             <h2>{album.name}</h2>
                             <h5>{album.artist.name}</h5>
                           </div>
-                          <div className="artist-stats">
-                            <h5>{album.playcount} play</h5>
-                          </div>
+                          <h5 className="artist-stats">
+                            {album.playcount} play
+                          </h5>
                         </div>
                       </a>
                     </div>
@@ -107,18 +107,16 @@ class ArtistDetails extends Component {
                         href={track.url}
                         target={"_blank"}
                       >
-                        <div className="artist-card-left">
-                          <div className="img">
-                            <img
-                              src={track.image[1]["#text"]}
-                              alt="Artist Page"
-                            />
-                          </div>
+                        <div className="artist-info">
+                          <img
+                            src={track.image[1]["#text"]}
+                            alt="Artist Page"
+                            className="img"
+                          />
                           <div>
                             <h2>{track.name}</h2>
                             <h5>{track.artist.name}</h5>
                           </div>
-
                           <div className="artist-stats">
                             <h5>{track.playcount} play</h5>
                             <h5>{track.listeners} listeners</h5>
