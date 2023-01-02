@@ -28,10 +28,10 @@
 .h-artist{
   display: flex;
   border-radius: 7px;
-  background: rgba(191, 203, 223, 1.0);
-  background: -webkit-linear-gradient(top left, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
-  background: -moz-linear-gradient(top left, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
-  background: linear-gradient(to bottom right, rgba(191, 203, 223, 1.0), rgba(146, 196, 132, 1.0));
+  background: rgba(213, 229, 242, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(213, 229, 242, 1.0), rgb(69, 87, 169));
+  background: -moz-linear-gradient(top left, rgba(213, 229, 242, 1.0), rgb(64, 78, 143));
+  background: linear-gradient(to bottom right, rgba(213, 229, 242, 1.0), rgb(67, 83, 153));
   align-items: center;
   cursor: pointer!important;
   height: 150px;
