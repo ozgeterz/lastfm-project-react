@@ -43,7 +43,7 @@
   .artists-section{
     width: 90%;
     max-height: 90%;
-    display: grid;
+    display: flex;
     padding: 1rem;
     overflow:auto;
     }
