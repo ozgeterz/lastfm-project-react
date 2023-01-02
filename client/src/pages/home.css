@@ -1,0 +1,84 @@
+.h-artists-wrapper{
+  height: min(85vh);
+  max-width: 90%;
+  width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0  20px 10px #a06dca;
+  
+
+}
+.h-artists-section{
+ 
+  justify-content: center;
+  width: 90%;
+  max-height: 90%;
+  display: grid;
+  padding: 1rem;
+  overflow: auto;
+  
+  }
+.h-artists-section :hover{
+  background-color: rgb(201, 109, 109);
+}
+.h-artist{
+  display: flex;
+  border-radius: 7px;
+  background-color:rgb(207, 164, 212);     
+  align-items: center;
+  cursor: pointer!important;
+  height: 150px;
+  max-height: 80%;
+  width: 100%;
+  padding-left: 20px;
+  gap: 10px;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  text-decoration:none ; 
+}
+
+.h-artist-stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+ 
+}
+.h-img{
+  display: flex; 
+ 
+  cursor: pointer!important;
+  width: 100px;
+  height: 100px; 
+}
+.h-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.h-artist-name{
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .artists-wrapper{
+  height: min(70vh, 50rem);
+      width: 80%!important;
+      height: 75%;
+      zoom: 0.8;
+  }
+}
+@media screen and (max-width: 542px) {
+  .artists-wrapper{
+  height: min(70vh, 50rem);
+
+      width: 80%!important;
+      height: 75%;
+      zoom: 0.5;
+  }
+  
+}
