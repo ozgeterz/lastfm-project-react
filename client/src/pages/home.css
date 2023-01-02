@@ -76,5 +76,11 @@
       height: 75%;
       zoom: 0.5;
   }
-  
+  .artists-section{
+    width: 90%;
+    max-height: 90%;
+    display: flex;
+    padding: 1rem;
+    overflow:auto;
+    }
 }
