@@ -1,33 +1,31 @@
 .h-artists-wrapper{
-  height: min(85vh);
+  height: min(90vh);
   max-width: 90%;
   width: 900px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
   border-radius: 10px;
-  box-shadow: 0 0  20px 10px #a06dca;
-  
-
+  box-shadow: 0 0  20px 3px rgb(0, 0, 0);
 }
 .h-artists-section{
- 
-  justify-content: center;
-  width: 90%;
-  max-height: 90%;
-  display: grid;
-  padding: 1rem;
-  overflow: auto;
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem ;
+  overflow:auto;
   }
-.h-artists-section :hover{
-  background-color: rgb(201, 109, 109);
-}
+  .h-artists-section :hover{
+    transform: scale(1.02);
+   
+  }
 .h-artist{
   display: flex;
   border-radius: 7px;
-  background-color:rgb(207, 164, 212);     
+  background: rgba(206, 174, 245, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
+  background: -moz-linear-gradient(top left, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
+  background: linear-gradient(to bottom right, rgba(206, 174, 245, 1.0), rgba(238, 179, 245, 1.0));
   align-items: center;
   cursor: pointer!important;
   height: 150px;
@@ -38,18 +36,16 @@
   font-size: large;
   color: rgb(0, 0, 0);
   text-decoration:none ; 
+  box-shadow: 0 0  10px 2px rgb(0, 0, 0);
 }
-
 .h-artist-stats{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
- 
 }
 .h-img{
   display: flex; 
- 
   cursor: pointer!important;
   width: 100px;
   height: 100px; 
@@ -62,9 +58,7 @@
 .h-artist-name{
   border-bottom: 2px solid black;
 }
-
 @media screen and (max-width: 1200px) {
-
   .artists-wrapper{
   height: min(70vh, 50rem);
       width: 80%!important;

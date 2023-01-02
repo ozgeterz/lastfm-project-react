@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./home.css";
 import { showTrack } from "../server";
 
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +31,7 @@ class Home extends Component {
       <div className="h-container">
         <div className="h-artists-wrapper">
           <div className="h-artists-section">
+      
             {tracks.map((track) => {
               const name = track.name;
               const link = "/artist/" + name;
@@ -42,7 +44,7 @@ class Home extends Component {
                     <h3 className="h-artist-name">Artist</h3>
                     <h2>{track.name}</h2>
                   </div>
-
+                
                   <div className="h-artist-stats">
                     <h5>Listeners:{track.listeners}</h5>
                     <h5>Playcount:{track.playcount}</h5>
